@@ -1,0 +1,2 @@
+20231103	07:36:43	5c560da3-b848-4dcb-b8a0-1f867275dc87	Error: Not allowed by CORS
+20231103	07:37:10	c20932af-ed9d-4e41-9dc7-e18fa9a3b0f1	Error: Not allowed by CORS
