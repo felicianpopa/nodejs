@@ -40,18 +40,16 @@ app.use(express.json());
 //serve static files
 app.use(express.static(path.join(__dirname, "/public")));
 
-app.get("^/$|index(.html)?", (req, res) => {
-  // res.sendFile("./views/index.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
+//serve static files for subdir
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-app.get("/new-page(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
+//add routing for subdir
+app.use("/subdir", require("./routes/subdir"));
 
-app.get("/old-page(.html)?", (req, res) => {
-  res.redirect(301, "/new-page.html"); //302 by default
-});
+//add routing for root files
+app.use("/", require("./routes/root"));
+
+app.use("/employees", require("./routes/api/employees"));
 
 app.all("*", (req, res) => {
   res.status(404);
