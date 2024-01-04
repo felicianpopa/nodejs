@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
 const PORT = process.env.PORT || 3500;
 
 const { logger } = require("./middleware/logEvents");
@@ -10,23 +11,6 @@ const errorHandler = require("./middleware/errorHandler");
 //Custom middleware logger (custom middleware needs next)
 app.use(logger);
 
-// List of websites allowed to access the node back-end
-const whitelist = [
-  "https://www.yoursite.com",
-  "http://127.0.0.1:5500",
-  "http://localhost:3500",
-];
-
-const corsOptions = {
-  origin: (originFromWebsite, callback) => {
-    if (whitelist.indexOf(originFromWebsite) !== -1 || !originFromWebsite) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
 app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded data
