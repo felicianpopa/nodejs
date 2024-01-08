@@ -194,3 +194,8 @@
 20240105	08:59:49	44b82100-42f1-4834-92a0-3ad3bc6ec927	POST	undefined	/auth
 20240105	08:59:58	112c8899-f5a2-48f9-8373-b7e56b903fa5	POST	undefined	/employees
 20240105	09:00:12	af306251-98c5-4a15-9b29-e705d2a28b85	GET	undefined	/refresh
+20240108	07:10:45	79dfebdf-96b9-4111-ab81-58a124ef9b11	GET	undefined	/employees
+20240108	07:10:45	74b97d38-1489-4f8a-b50c-053ef606a984	GET	undefined	/favicon.ico
+20240108	07:31:11	4ed52823-ba7d-4465-b09a-5fa3267554ad	GET	undefined	/
+20240108	07:31:11	df813c86-b94f-49be-8c4b-9b21f87cafcc	GET	undefined	/css/style.css
+20240108	07:31:11	6ba6ec92-985c-4a9f-af64-dc72d98cbf04	GET	undefined	/favicon.ico
