@@ -199,3 +199,6 @@
 20240108	07:31:11	4ed52823-ba7d-4465-b09a-5fa3267554ad	GET	undefined	/
 20240108	07:31:11	df813c86-b94f-49be-8c4b-9b21f87cafcc	GET	undefined	/css/style.css
 20240108	07:31:11	6ba6ec92-985c-4a9f-af64-dc72d98cbf04	GET	undefined	/favicon.ico
+20240108	16:10:08	a4b1fb62-8624-4156-b7b0-8a6fae4c3ab8	POST	undefined	/register
+20240108	16:13:27	04334cc4-38a7-4ab4-ada1-faf12f1ffce6	POST	undefined	/register
+20240108	16:20:16	bfa50fd1-88b9-4cde-bfd0-90df24d23ca6	POST	undefined	/auth
